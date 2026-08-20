@@ -176,10 +176,17 @@ body {
     flex-shrink: 0;   /* prevents image from shrinking */
 }
 
-.highlight-card h3,
 .highlight-card p {
     margin: 0;
 }
+
+.highlight-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    color: var(--accent);
+}
+
 
 .bullet-list {
     margin: 0.25rem 0 0;
