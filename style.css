@@ -156,6 +156,12 @@ body {
     gap: 1.75rem;
 }
 
+.two-column-2 {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+    gap: 1.75rem;
+}
+
 /* Cards & lists */
 
 .highlight-card {
