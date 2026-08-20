@@ -187,6 +187,12 @@ body {
     color: var(--accent);
 }
 
+.highlight-card.vertical-card {
+    display: block !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
 .vertical-card {
     display: block !important;
 }
