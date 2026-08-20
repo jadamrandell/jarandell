@@ -282,4 +282,10 @@ h3 {
     .section {
         margin-bottom: 2rem;
     }
+
+    .member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 }
