@@ -150,7 +150,7 @@ body {
 
 /* Two-column layout */
 
-.two-column {
+.two-column-uneven {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
     gap: 1.75rem;
