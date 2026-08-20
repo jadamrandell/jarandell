@@ -159,17 +159,26 @@ body {
 /* Cards & lists */
 
 .highlight-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; /* space between image and text */
     background: var(--accent-soft);
     border-radius: 10px;
     padding: 1rem 1.1rem;
     border: 1px solid rgba(47, 79, 111, 0.15);
 }
 
-.highlight-card h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1.05rem;
-    color: var(--accent);
+.highlight-card img.profile-pic {
+    width: 180px;     /* bigger image */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px; /* softer corners */
+    flex-shrink: 0;   /* prevents image from shrinking */
+}
+
+.highlight-card h3,
+.highlight-card p {
+    margin: 0;
 }
 
 .bullet-list {
