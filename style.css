@@ -187,7 +187,14 @@ body {
     color: var(--accent);
 }
 
+.vertical-card {
+    display: block !important;
+}
 
+.vertical-card h3,
+.vertical-card p {
+    margin-bottom: 0.75rem;
+}
 .bullet-list {
     margin: 0.25rem 0 0;
     padding-left: 1.2rem;
