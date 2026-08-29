@@ -265,25 +265,6 @@ h3 {
 
 /* Responsive */
 
-@media (max-width: 900px) {
-    .header-inner {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-    .header-photo {
-        text-align: left;
-    }
-
-    .profile-pic {
-        width: 180px;
-        height: 180px;
-    }
-
-    .two-column {
-        grid-template-columns: 1fr;
-    }
-}
 
 @media (max-width: 600px) {
     .nav {
@@ -308,3 +289,82 @@ h3 {
     justify-content: center;
 }
 }
+
+/* ============================
+  MOBILE RESPONSIVE DESIGN
+============================ */
+
+@media (max-width: 900px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .header-photo {
+        flex: none;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .two-column-uneven,
+    .two-column-even {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+        border-right: none;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .highlight-card,
+    .highlight-card.vertical-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin: 1rem auto 2rem;
+        padding: 0 1rem;
+    }
+
+    .site-footer {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+
