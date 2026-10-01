@@ -250,6 +250,25 @@ body {
     background: #fafafa;
 }
 
+.footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-text p {
+    margin: 0.25rem 0;
+}
+
+.footer-qr img {
+    width: 90px;      /* adjust size as needed */
+    height: 90px;
+    object-fit: contain;
+}
+
 /* Typography tweaks */
 
 p {
