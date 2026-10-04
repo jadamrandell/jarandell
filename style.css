@@ -363,17 +363,54 @@ h3 {
 }
 
 @media (max-width: 700px) {
-    .nav {
-        justify-content: center;
+@media (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+
+    /* Transform hamburger into an 'X' */
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hide menu by default on mobile */
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
         text-align: center;
-        gap: 0.5rem;
+        gap: 0;
+        padding-top: 1rem;
+    }
+
+    /* Reveal menu when JS toggles 'show' class */
+    .nav-links.show {
+        display: flex; 
     }
 
     .nav-link {
-        font-size: 0.85rem;
+        font-size: 1rem;
         border-right: none;
-        padding: 0.5rem 0.75rem;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 0.8rem 1rem;
+        border-radius: 0; 
     }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .highlight-card,
+    .highlight-card.vertical-card {
+        padding: 1rem;
+    }
+}
 
     .highlight-card,
     .highlight-card.vertical-card {
