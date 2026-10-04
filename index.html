@@ -22,7 +22,13 @@
         </div>
     </div>
 
-    <nav class="nav">
+<nav class="nav">
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="nav-links" id="nav-links">
         <a href="index.html" class="nav-link active">Home</a>
         <a href="https://script.google.com/macros/s/AKfycbxx006mG1cO2qaUKPGTWTmlW4GkeCHCnFasyRC6lqpO9Qa3GLRBdu-E3htqkRvSanneLQ/exec" class="nav-link active">Schedule a Meeting</a>
         <a href="https://docs.google.com/spreadsheets/d/1galutxt5ODDxrLX2Oj8e3XrWx7bi0Ifs2hdrEtmWF0Q/edit?usp=sharing" class="nav-link">Current Projects</a>
@@ -30,7 +36,8 @@
         <a href="LabMembers.html" class="nav-link">Lab Members</a>
         <a href="https://jadamrandell.github.io/RandellLabActivities/" class="nav-link">Lab Activities</a>
         <a href="mailto:jrandell4@uco.edu" class="nav-link">Contact</a>
-    </nav>
+    </div>
+</nav>
 </header>
 
 <main class="main">
@@ -91,6 +98,14 @@
         </div>
     </div>
 </footer>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('show');
+    });
+</script>
 </body>
 </html>
