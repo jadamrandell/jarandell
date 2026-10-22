@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications & Presentations — J. Adam Randell, Ph.D.</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="header-text">
+            <h1 class="name">Published Datasets or Datasets Under Review</h1>
+        </div>
+        <!-- no header-photo div here -->
+    </div>
+
+
+<nav class="nav">
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="https://script.google.com/macros/s/AKfycbxx006mG1cO2qaUKPGTWTmlW4GkeCHCnFasyRC6lqpO9Qa3GLRBdu-E3htqkRvSanneLQ/exec" class="nav-link active">Schedule a Meeting</a>
+        <a href="https://docs.google.com/spreadsheets/d/1galutxt5ODDxrLX2Oj8e3XrWx7bi0Ifs2hdrEtmWF0Q/edit?usp=sharing" class="nav-link">Current Projects</a>
+        <a href="scholarlyactivity.html" class="nav-link">Publications &amp; Presentations</a>
+        <a href="LabMembers.html" class="nav-link">Lab Members</a>
+        <a href="https://jadamrandell.github.io/RandellLabActivities/" class="nav-link">Lab Activities</a>
+        <a href="PublishedData.html" class="nav-link">Datasets</a>
+        <a href="mailto:jrandell4@uco.edu" class="nav-link">Contact</a>
+    </div>
+</nav>
+</header>
+
+<main class="main">
+
+    <!-- Datasets Section -->
+    <section class="section" id="datasets">
+        <div class="section-header">
+            <h2>Published Datasets</h2>
+        </div>
+        
+        <div class="section-body">
+            <p>
+                In alignment with open science practices, de-identified datasets from the Social Learning and Perception (SLaP) lab are made available here for replication, meta-analysis, and secondary research purposes. If you use these datasets, please cite the corresponding publication.
+            </p>
+
+            <hr style="border: 0; border-top: 1px solid #ddd; margin: 25px 0;">
+
+            <!-- Dataset 1 Placeholder -->
+            <div class="highlight-card vertical-card" style="margin-bottom: 20px;">
+                <h3>Life History Strategies and Conformity Dataset (2026)</h3>
+                <p><strong>Associated Project:</strong> <em>Fast Life Strategists Conform Less to Normative Social Influence</em></p>
+                <p>This dataset was collected to replicate and extend the work of Stamos et al. (2021). The dataset includes measurements of participants' adult life history strategies, demographics, and ratings of two images for which they were told others' ratings.</p>
+                <ul class="link-list">
+                    <li><a href="data/LH&Conformity/Data_June2026.sav" target="_blank" rel="noopener">Download Data (.sav)</a></li>
+                    <li><em>Associated Publication Under Review.</li>
+                </ul>
+            </div>
+
+<!-- Dataset 2 Placeholder -->
+            <div class="highlight-card vertical-card" style="margin-bottom: 20px;">
+                <h3>Life History Strategies and Intrusive Thinking (2026)</h3>
+                <p><strong>Associated Project:</strong> <em>Slow Life Strategists Experience Greater Intrusive Thought Frequency, Particularly When They Endorse More Moral Foundations</em></p>
+                <p>These data sets were collected to test the hypothesis that due in part to their socially mutualistic nature, those adopting slow life strategies would experience more intrusive thoughts, particularly when they endorse a wider array of moral foundations. This dataset includes deidentified data of participants' endorsements of the original five moral foundations, their scores on the Mini-K, their instrusive thought frequencies, and their guilt and shame proneness, along with their proclivity to take the perspectives of others, and the empathize with others.</p>
+                <ul class="link-list">
+                    <li><a href="data/LH&InstrusiveThinking/Study 1 Data.sav" target="_blank" rel="noopener">Download Study 1 Data (.sav)</a></li>
+                    <li><a href="data/LH&InstrusiveThinking/Study 2 Data.sav" target="_blank" rel="noopener">Download Study 2 Data (.sav)</a></li>
+                    <li>Associated Publication Under Review</a></li>
+                </ul>
+            </div>
+
+
+          </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-text">
+            <p>© 2024 Adam Randell · University of Central Oklahoma</p>
+            <p>Schedule a meeting using the QR code:</p>
+        </div>
+
+        <div class="footer-qr">
+            <img src="Scheduling QRCode.png" alt="Schedule a meeting QR code">
+        </div>
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('show');
+    });
+</script>
+</body>
+</html>
